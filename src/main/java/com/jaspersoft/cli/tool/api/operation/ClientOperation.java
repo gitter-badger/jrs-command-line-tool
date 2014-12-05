@@ -15,11 +15,6 @@ public interface ClientOperation {
     ClientResource getResource(String uri);
     void importResource(InputStream resource);
     void importResource(InputStream resource, Map<ImportParameter, Boolean> parameters);
-
-    /**
-     * Imports resource.
-     * @param resource zip archive
-     */
     void importResource(File resource);
 
 }
